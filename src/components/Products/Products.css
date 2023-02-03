@@ -1,0 +1,9 @@
+.products-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-category-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
