@@ -1,6 +1,11 @@
+import { Banner } from "./components";
 
 function App() {
-  return <div className="App">Hello, this is my Vite App</div>;
+  return (
+    <div className="App">
+      <Banner />
+    </div>
+  );
 }
 
 export default App;
