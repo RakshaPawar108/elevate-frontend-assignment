@@ -1,0 +1,6 @@
+.function-bar {
+  margin-bottom: 1rem;
+  display: flex;
+  position: absolute;
+  bottom: 100%;
+}
