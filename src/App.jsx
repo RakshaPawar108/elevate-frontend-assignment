@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Banner, Products, SideBar } from "./components";
+import { Banner, Header, Products, SideBar } from "./components";
 
 function App() {
   const [openSideBar, setOpenSideBar] = useState(false);
   return (
     <div className="App">
+      <Header />
       <SideBar setOpenSideBar={setOpenSideBar} openSideBar={openSideBar} />
       <Banner setOpenSideBar={setOpenSideBar} />
       <Products />

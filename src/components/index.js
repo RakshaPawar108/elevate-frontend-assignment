@@ -7,3 +7,4 @@ export { SideBar } from "./SideBar/SideBar";
 export { SearchBar } from "./SearchBar/SearchBar";
 export { CategoryFilter } from "./CategoryFilter/CategoryFilter";
 export { LanguageFilter } from "./LanguageFilter/LanguageFilter";
+export { Header } from "./Header/Header";
