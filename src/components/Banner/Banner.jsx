@@ -11,8 +11,8 @@ export const Banner = ({ setOpenSideBar }) => {
           className="banner-background-image"
           alt="Banner Image"
         />
+        <FunctionBar setOpenSideBar={setOpenSideBar} />
         <div className="overlay-text-wrapper">
-          <FunctionBar setOpenSideBar={setOpenSideBar} />
           <h3 className="banner-heading">Get Started</h3>
           <h3 className="banner-heading">Your Favourite Shopping Site</h3>
           <a href="/">
