@@ -1,0 +1,20 @@
+.language-filter-wrapper {
+  width: 30%;
+  display: flex;
+}
+
+.lang-filter-options {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.7rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.lang-filter-option {
+  margin: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+}

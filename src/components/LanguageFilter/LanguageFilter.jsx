@@ -1,3 +1,5 @@
+import "./LanguageFilter.css";
+
 export const LanguageFilter = () => {
   return (
     <div className="language-filter-wrapper">

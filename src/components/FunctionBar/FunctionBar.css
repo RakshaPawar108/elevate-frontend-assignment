@@ -3,7 +3,8 @@
   display: flex;
   position: absolute;
   align-items: space-evenly;
+  justify-content: center;
   bottom: 100%;
   width: 100%;
-  gap: 1rem;
+  gap: 2rem;
 }
