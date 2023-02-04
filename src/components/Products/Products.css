@@ -3,7 +3,11 @@
   flex-direction: column;
 }
 
+.category-wrapper {
+  margin: 1rem;
+}
+
 .products-category-heading {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
