@@ -6,7 +6,12 @@ export const Products = () => {
     <div className="products-wrapper">
       <div className="category-wrapper">
         <div className="products-category-heading">Men's & Women's Fashion</div>
-        <Product />
+
+        <div className="products-container">
+          <Product />
+          <Product />
+          <Product />
+        </div>
       </div>
     </div>
   );

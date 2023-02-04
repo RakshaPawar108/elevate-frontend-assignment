@@ -7,6 +7,14 @@
   margin: 1rem;
 }
 
+.products-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
 .products-category-heading {
   font-size: 2rem;
   font-weight: bold;

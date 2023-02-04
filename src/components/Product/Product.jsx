@@ -7,10 +7,11 @@ export const Product = () => {
         <p className="product-price">
           Price: <span className="number-text">$30</span>
         </p>
-        <div className="product-image">
+        <div className="product-image-div">
           <img
             src="https://themewagon.github.io/eflyer/images/women-clothes-img.png"
             alt="Product Image"
+            className='product-image'
           />
         </div>
         <div className="buttons-section">
