@@ -1,4 +1,5 @@
 import { bannerImg } from "../../assets";
+import { FunctionBar } from "../FunctionBar/FunctionBar";
 import "./Banner.css";
 
 export const Banner = () => {
@@ -11,6 +12,7 @@ export const Banner = () => {
           alt="Banner Image"
         />
         <div className="overlay-text-wrapper">
+          <FunctionBar />
           <h3 className="banner-heading">Get Started</h3>
           <h3 className="banner-heading">Your Favourite Shopping Site</h3>
           <a href="/">
