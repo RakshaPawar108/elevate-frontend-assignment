@@ -6,3 +6,4 @@ export { FunctionBar } from "./FunctionBar/FunctionBar";
 export { SideBar } from "./SideBar/SideBar";
 export { SearchBar } from "./SearchBar/SearchBar";
 export { CategoryFilter } from "./CategoryFilter/CategoryFilter";
+export { LanguageFilter } from "./LanguageFilter/LanguageFilter";
