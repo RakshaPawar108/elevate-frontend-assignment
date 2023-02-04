@@ -3,3 +3,4 @@ export { Products } from "./Products/Products";
 export { Product } from "./Product/Product";
 export { HamburgerButton } from "./HamburgerButton/HamburgerButton";
 export { FunctionBar } from "./FunctionBar/FunctionBar";
+export { SideBar } from "./SideBar/SideBar";

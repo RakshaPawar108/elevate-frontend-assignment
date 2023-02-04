@@ -1,8 +1,9 @@
-import { Banner, Products } from "./components";
+import { Banner, Products, SideBar } from "./components";
 
 function App() {
   return (
     <div className="App">
+      <SideBar />
       <Banner />
       <Products />
     </div>
