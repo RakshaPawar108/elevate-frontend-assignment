@@ -1,15 +1,15 @@
 import './Product.css'
 
-export const Product = () => {
+export const Product = ({title, price, image}) => {
     return (
       <div className="product-card">
-        <h4 className="product-name">T-shirt</h4>
+        <h4 className="product-name">{title}</h4>
         <p className="product-price">
-          Price: <span className="number-text">$30</span>
+          Price: <span className="number-text">${price}</span>
         </p>
         <div className="product-image-div">
           <img
-            src="https://themewagon.github.io/eflyer/images/women-clothes-img.png"
+            src={image}
             alt="Product Image"
             className='product-image'
           />
