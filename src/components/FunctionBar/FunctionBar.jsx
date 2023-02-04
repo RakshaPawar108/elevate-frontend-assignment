@@ -1,10 +1,10 @@
 import { HamburgerButton } from "../HamburgerButton/HamburgerButton";
 import "./FunctionBar.css";
 
-export const FunctionBar = () => {
+export const FunctionBar = ({ setOpenSideBar }) => {
   return (
     <div className="function-bar">
-      <HamburgerButton />
+      <HamburgerButton setOpenSideBar={setOpenSideBar} />
     </div>
   );
 };

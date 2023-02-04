@@ -2,7 +2,7 @@ import { bannerImg } from "../../assets";
 import { FunctionBar } from "../FunctionBar/FunctionBar";
 import "./Banner.css";
 
-export const Banner = () => {
+export const Banner = ({ setOpenSideBar }) => {
   return (
     <div className="banner-wrapper" id="home">
       <div className="banner-background-image-wrapper">
@@ -12,7 +12,7 @@ export const Banner = () => {
           alt="Banner Image"
         />
         <div className="overlay-text-wrapper">
-          <FunctionBar />
+          <FunctionBar setOpenSideBar={setOpenSideBar} />
           <h3 className="banner-heading">Get Started</h3>
           <h3 className="banner-heading">Your Favourite Shopping Site</h3>
           <a href="/">
