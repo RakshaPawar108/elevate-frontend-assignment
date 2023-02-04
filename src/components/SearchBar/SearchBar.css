@@ -6,12 +6,12 @@
 }
 
 .searchbar {
-  padding: 0.7rem;
+  padding: 1rem;
   outline: none;
   border: none;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
-  width: 90%;
+  width: 100%;
 }
 
 .search-icon {
@@ -19,9 +19,10 @@
   border-color: #f26522;
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
-  padding: 0.5rem;
-  display:flex;
+  padding: 0.9rem;
+  display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-fa-icon {
