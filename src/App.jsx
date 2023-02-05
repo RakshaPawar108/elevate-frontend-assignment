@@ -5,6 +5,7 @@ import { useProducts } from "./context";
 function App() {
   const [openSideBar, setOpenSideBar] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
   let products = useProducts();
   const categories = [...new Set(products.map((product) => product.category))];
 
@@ -16,6 +17,10 @@ function App() {
   const handleChange = (e) => {
     setSelectedCategory(e.target.value);
   };
+
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+  };
   return (
     <div className="App">
       <Header />
@@ -25,8 +30,11 @@ function App() {
         handleChange={handleChange}
         setOpenSideBar={setOpenSideBar}
         categories={categories}
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        onSearch={handleSearch}
       />
-      <Products filteredProducts={filteredProducts} />
+      <Products filteredProducts={filteredProducts} searchterm={searchTerm} />
     </div>
   );
 }

@@ -7,6 +7,9 @@ export const Banner = ({
   selectedCategory,
   handleChange,
   categories,
+  searchTerm,
+  setSearchTerm,
+  onSearch
 }) => {
   return (
     <div className="banner-wrapper" id="home">
@@ -21,6 +24,9 @@ export const Banner = ({
           handleChange={handleChange}
           setOpenSideBar={setOpenSideBar}
           categories={categories}
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          onSearch={onSearch}
         />
         <div className="overlay-text-wrapper">
           <h3 className="banner-heading">Get Started</h3>

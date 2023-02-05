@@ -10,7 +10,10 @@ export const FunctionBar = ({
   setOpenSideBar,
   selectedCategory,
   handleChange,
-  categories
+  categories,
+  searchTerm,
+  setSearchTerm,
+  onSearch
 }) => {
   return (
     <div className="function-bar">
@@ -20,7 +23,11 @@ export const FunctionBar = ({
         handleChange={handleChange}
         categories={categories}
       />
-      <SearchBar />
+      <SearchBar
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        onSearch={onSearch}
+      />
       <LanguageFilter />
       <div className="btn-wrapper">
         <FontAwesomeIcon className="icon-style" icon={faCartShopping} />
