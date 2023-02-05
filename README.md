@@ -12,7 +12,7 @@ View the live website here: [https://elevate-frontend-assignment.netlify.app/](h
 ## Features
 
 - Uses ReactJS, React Hooks, React Context, CSS, and Javascript 
-- Uses Vite instead of CRA
+- Uses [Vite](https://vitejs.dev/) instead of CRA, thus is lighter and faster.
 - Fully Responsive Design
 - Reusable Components
 ## API Reference
