@@ -6,11 +6,18 @@ import { SearchBar } from "../SearchBar/SearchBar";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import "./FunctionBar.css";
 
-export const FunctionBar = ({ setOpenSideBar }) => {
+export const FunctionBar = ({
+  setOpenSideBar,
+  selectedCategory,
+  handleChange,
+}) => {
   return (
     <div className="function-bar">
       <HamburgerButton setOpenSideBar={setOpenSideBar} />
-      <CategoryFilter />
+      <CategoryFilter
+        selectedCategory={selectedCategory}
+        handleChange={handleChange}
+      />
       <SearchBar />
       <LanguageFilter />
       <div className="btn-wrapper">

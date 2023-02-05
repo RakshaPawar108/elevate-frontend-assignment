@@ -2,7 +2,7 @@ import { bannerImg } from "../../assets";
 import { FunctionBar } from "../FunctionBar/FunctionBar";
 import "./Banner.css";
 
-export const Banner = ({ setOpenSideBar }) => {
+export const Banner = ({ setOpenSideBar, selectedCategory, handleChange }) => {
   return (
     <div className="banner-wrapper" id="home">
       <div className="banner-background-image-wrapper">
@@ -11,7 +11,11 @@ export const Banner = ({ setOpenSideBar }) => {
           className="banner-background-image"
           alt="Banner Image"
         />
-        <FunctionBar setOpenSideBar={setOpenSideBar} />
+        <FunctionBar
+          selectedCategory={selectedCategory}
+          handleChange={handleChange}
+          setOpenSideBar={setOpenSideBar}
+        />
         <div className="overlay-text-wrapper">
           <h3 className="banner-heading">Get Started</h3>
           <h3 className="banner-heading">Your Favourite Shopping Site</h3>
