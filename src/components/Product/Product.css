@@ -62,3 +62,12 @@
   text-decoration: none;
   color: #000000;
 }
+
+@media screen and (max-width: 450px) {
+  .product-card {
+    width: 20rem;
+  }
+  .product-image-div {
+    width: 20rem;
+  }
+}

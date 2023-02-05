@@ -28,3 +28,10 @@
 .search-fa-icon {
   font-size: 1.2rem;
 }
+
+@media screen and (max-width:450px) {
+  .searchbar-wrapper {
+    width: 100%;
+  }
+  
+}

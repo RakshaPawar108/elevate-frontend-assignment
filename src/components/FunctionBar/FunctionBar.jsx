@@ -32,8 +32,6 @@ export const FunctionBar = ({
       <div className="btn-wrapper">
         <FontAwesomeIcon className="icon-style" icon={faCartShopping} />
         <button className="btn">Cart</button>
-      </div>
-      <div className="btn-wrapper">
         <FontAwesomeIcon className="icon-style" icon={faUser} />
         <button className="btn">Profile</button>
       </div>

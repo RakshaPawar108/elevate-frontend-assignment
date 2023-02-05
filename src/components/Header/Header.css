@@ -12,6 +12,7 @@
   align-items: center;
   justify-content:center;
   align-self: center;
+  flex-shrink: 1;
   -webkit-transform:translate(50%, 0);
   -moz-transform:translate(50%, 0);
   -ms-transform:translate(50%, 0);
@@ -28,4 +29,33 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
+}
+
+@media screen and (max-width:1070px){
+  .header-main-wrapper {
+    transform: translate(40%, 0);
+    -webkit-transform: translate(40%, 0);
+    -moz-transform: translate(40%, 0);
+    -ms-transform: translate(40%, 0);
+    -o-transform: translate(40%, 0);
+}
+  
+}
+
+@media screen and (max-width:950px){
+  .header-main-wrapper {
+    transform: translate(35%, 0);
+    -webkit-transform: translate(35%, 0);
+    -moz-transform: translate(35%, 0);
+    -ms-transform: translate(35%, 0);
+    -o-transform: translate(35%, 0);
+}
+  
+}
+
+@media screen and (max-width:650px){
+  .header-main-wrapper {
+    display: none;
+}
+  
 }

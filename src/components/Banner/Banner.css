@@ -57,3 +57,35 @@
   background-color: #f26522;
   color: #ffffff;
 }
+
+@media screen and (max-width: 900px) {
+  .overlay-text-wrapper {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .overlay-text-wrapper {
+    left: 47%;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .overlay-text-wrapper {
+    font-size: 1.2rem;
+  }
+
+  .intro-btn {
+    font-size: 0.9rem;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .overlay-text-wrapper {
+    left: 50%;
+  }
+}

@@ -2,8 +2,9 @@
   margin-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
+  flex-shrink: 1;
   width: 80%;
   position: absolute;
   top: 25%;
@@ -14,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 1;
 }
 
 .btn {
@@ -30,4 +32,51 @@
 .icon-style {
   font-size: 1.5rem;
   color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .function-bar {
+    top: 20%;
+    left: 10%;
+  }
+
+  .btn-wrapper {
+    justify-self: center;
+    width: 100%;
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .function-bar {
+    top: 10%;
+    left: 5%;
+  }
+
+  .btn-wrapper {
+    justify-self: center;
+    width: 100%;
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .function-bar {
+    flex-wrap: nowrap;
+  }
+
+  .btn-wrapper {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .function-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* .btn-wrapper {
+    display:none;
+  } */
 }

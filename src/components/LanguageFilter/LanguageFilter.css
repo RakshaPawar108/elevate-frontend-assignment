@@ -1,5 +1,6 @@
 .language-filter-wrapper {
   display: flex;
+  flex-shrink: 1;
 }
 
 .lang-filter-options {
@@ -16,4 +17,10 @@
   margin: 1rem;
   background-color: #ffffff;
   color: #000000;
+}
+
+@media screen and (max-width: 900px) {
+  .language-filter-wrapper {
+    display: none;
+  }
 }
