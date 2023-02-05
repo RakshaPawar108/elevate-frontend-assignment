@@ -9,7 +9,7 @@ export const Banner = ({
   categories,
   searchTerm,
   setSearchTerm,
-  onSearch
+  handleSearch,
 }) => {
   return (
     <div className="banner-wrapper" id="home">
@@ -26,7 +26,7 @@ export const Banner = ({
           categories={categories}
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-          onSearch={onSearch}
+          handleSearch={handleSearch}
         />
         <div className="overlay-text-wrapper">
           <h3 className="banner-heading">Get Started</h3>

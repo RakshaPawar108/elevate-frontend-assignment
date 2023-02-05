@@ -6,21 +6,31 @@ function App() {
   const [openSideBar, setOpenSideBar] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
+  const [searchedProds, setSearchedProds] = useState([]);
   let products = useProducts();
   const categories = [...new Set(products.map((product) => product.category))];
 
-  const filteredProducts =
+  let filteredProducts =
     selectedCategory === "All"
       ? products
       : products.filter((product) => product.category === selectedCategory);
+
+  const handleSearch = () => {
+    let updatedProducts = [];
+    if (searchTerm !== "") {
+      updatedProducts = filteredProducts.filter(
+        (item) =>
+          item.title.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1
+      );
+    }
+
+    setSearchedProds(updatedProducts);
+  };
 
   const handleChange = (e) => {
     setSelectedCategory(e.target.value);
   };
 
-  const handleSearch = (term) => {
-    setSearchTerm(term);
-  };
   return (
     <div className="App">
       <Header />
@@ -32,9 +42,11 @@ function App() {
         categories={categories}
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
-        onSearch={handleSearch}
+        handleSearch={handleSearch}
       />
-      <Products filteredProducts={filteredProducts} searchterm={searchTerm} />
+      <Products
+        updatedProducts={searchTerm ? searchedProds : filteredProducts}
+      />
     </div>
   );
 }

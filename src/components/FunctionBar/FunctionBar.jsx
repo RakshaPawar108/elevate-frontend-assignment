@@ -13,7 +13,7 @@ export const FunctionBar = ({
   categories,
   searchTerm,
   setSearchTerm,
-  onSearch
+  handleSearch
 }) => {
   return (
     <div className="function-bar">
@@ -26,7 +26,7 @@ export const FunctionBar = ({
       <SearchBar
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
-        onSearch={onSearch}
+        handleSearch={handleSearch}
       />
       <LanguageFilter />
       <div className="btn-wrapper">
