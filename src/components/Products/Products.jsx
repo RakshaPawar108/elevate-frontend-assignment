@@ -3,27 +3,26 @@ import { useProducts } from "../../context";
 import "./Products.css";
 
 export const Products = ({ selectedCategory }) => {
-  let { mensProducts, womensProducts, jewelery, electronics } = useProducts();
+  let products = useProducts();
 
-  let womensAndMensProds = [...womensProducts, ...mensProducts];
 
   return (
     <div className="products-wrapper">
       <div
         className="category-wrapper"
-        style={{
-          display:
-            selectedCategory === "Clothing" || selectedCategory === "All"
-              ? "flex"
-              : "none",
-        }}
+        // style={{
+        //   display:
+        //     selectedCategory === "Clothing" || selectedCategory === "All"
+        //       ? "flex"
+        //       : "none",
+        // }}
       >
-        <div className="products-category-heading" id="fashion">
-          Men's & Women's Fashion
+        <div className="products-category-heading" id="products">
+          Products
         </div>
 
         <div className="products-container">
-          {womensAndMensProds.map((product) => (
+          {products.map((product) => (
             <Product
               title={product.title}
               price={product.price}
@@ -33,7 +32,7 @@ export const Products = ({ selectedCategory }) => {
           ))}
         </div>
       </div>
-      <div
+      {/* <div
         className="category-wrapper"
         style={{
           display:
@@ -80,7 +79,7 @@ export const Products = ({ selectedCategory }) => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
