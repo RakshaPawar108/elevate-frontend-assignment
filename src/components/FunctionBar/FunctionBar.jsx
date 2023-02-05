@@ -10,6 +10,7 @@ export const FunctionBar = ({
   setOpenSideBar,
   selectedCategory,
   handleChange,
+  categories
 }) => {
   return (
     <div className="function-bar">
@@ -17,6 +18,7 @@ export const FunctionBar = ({
       <CategoryFilter
         selectedCategory={selectedCategory}
         handleChange={handleChange}
+        categories={categories}
       />
       <SearchBar />
       <LanguageFilter />

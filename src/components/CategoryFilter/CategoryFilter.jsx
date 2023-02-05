@@ -1,7 +1,6 @@
 import "./CategoryFilter.css";
 
-export const CategoryFilter = ({ selectedCategory, handleChange }) => {
-  const categories = ["Clothing", "Electronics", "Jewellery"];
+export const CategoryFilter = ({ selectedCategory, handleChange, categories }) => {
   return (
     <div className="category-filter-wrapper">
       <select
