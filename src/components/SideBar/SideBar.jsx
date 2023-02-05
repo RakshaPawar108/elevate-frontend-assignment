@@ -4,7 +4,7 @@ import "./SideBar.css";
 
 export const SideBar = ({ setOpenSideBar, openSideBar }) => {
   return (
-    <aside className={openSideBar ? 'sidebar sidebar-open': 'sidebar'}>
+    <aside className={openSideBar ? "sidebar sidebar-open" : "sidebar"}>
       <FontAwesomeIcon
         className="cross-icon"
         icon={faXmark}
@@ -17,18 +17,8 @@ export const SideBar = ({ setOpenSideBar, openSideBar }) => {
           </a>
         </li>
         <li className="list-item">
-          <a href="#fashion" className="list-item-link">
-            Fashion
-          </a>
-        </li>
-        <li className="list-item">
-          <a href="#electronics" className="list-item-link">
-            Electronics
-          </a>
-        </li>
-        <li className="list-item">
-          <a href="#jewellery" className="list-item-link">
-            Jewellery & Accessories
+          <a href="#products" className="list-item-link">
+            Products
           </a>
         </li>
       </ul>
