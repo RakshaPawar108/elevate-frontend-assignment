@@ -5,7 +5,9 @@ import { useState } from "react";
 
 export const Products = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  let products = useProducts();
+  let { mensProducts, womensProducts, jewelery, electronics } = useProducts();
+
+  let womensAndMensProds = [...womensProducts, ...mensProducts]
 
   return (
     <div className="products-wrapper">
@@ -15,7 +17,7 @@ export const Products = () => {
         </div>
 
         <div className="products-container">
-          {products.map((product) => (
+          {womensAndMensProds.map((product) => (
             <Product
               title={product.title}
               price={product.price}
@@ -31,7 +33,7 @@ export const Products = () => {
         </div>
 
         <div className="products-container">
-          {products.map((product) => (
+          {electronics.map((product) => (
             <Product
               title={product.title}
               price={product.price}
@@ -47,7 +49,7 @@ export const Products = () => {
         </div>
 
         <div className="products-container">
-          {products.map((product) => (
+          {jewelery.map((product) => (
             <Product
               title={product.title}
               price={product.price}

@@ -4,13 +4,23 @@ import { getProducts } from "../utils";
 const ProductsContext = createContext(null);
 
 const ProductsProvider = ({ children }) => {
-  const [products, setProducts] = useState([]);
+  const [mensProducts, setMensProducts] = useState([]);
+  const [womensProducts, setWomensProducts] = useState([]);
+  const [jewelery, setJewelery] = useState([]);
+  const [electronics, setElectronics] = useState([]);
 
   useEffect(() => {
-    getProducts(setProducts);
+    getProducts(
+      setMensProducts,
+      setWomensProducts,
+      setJewelery,
+      setElectronics
+    );
   }, []);
   return (
-    <ProductsContext.Provider value={products}>
+    <ProductsContext.Provider
+      value={{ mensProducts, womensProducts, jewelery, electronics }}
+    >
       {children}
     </ProductsContext.Provider>
   );
