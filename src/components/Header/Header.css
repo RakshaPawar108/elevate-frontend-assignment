@@ -22,6 +22,7 @@
 .header-links {
     display: flex;
     gap: 2rem;
+    white-space: nowrap;
 }
 
 .header-link {
@@ -39,6 +40,13 @@
     -ms-transform: translate(40%, 0);
     -o-transform: translate(40%, 0);
 }
+  
+}
+
+@media screen and (max-width:1290px){
+  .header-links {
+    white-space:normal;
+  }
   
 }
 
