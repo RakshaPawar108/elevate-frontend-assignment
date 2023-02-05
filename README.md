@@ -44,6 +44,7 @@ Docs Link: [Fake Store API](https://fakestoreapi.com/docs)
 - The Language Dropdown in the banner is non-functional and for display purposes only.
 - The 'Cart' and 'Profile' buttons are non-functional and for display purposes only.
 - The 'Buy Now' and 'See More' buttons on each product cards are non-functional and for display purposes only.
+- The header on top is non functional and for display purposes only.
 ## Run Locally
 
 Clone the project
@@ -75,16 +76,6 @@ Start the development server
 ```
 Open [http://127.0.0.1:5173/](http://127.0.0.1:5173/) to view it in your browser.
 
-
-## Demo
-
-![Demo1](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-![Demo2](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-![Demo3](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
 ## About the Developer
